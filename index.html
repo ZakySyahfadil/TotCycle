@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TotCycle</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+
+<body>
+
+    <main class="login-container">
+        <div class="login-card">
+
+            <div class="logo">🛍️</div>
+            <h1>TotCycle</h1>
+            <p class="subtitle">Selamat datang! Isi data dirimu untuk mulai berbelanja.</p>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" autocomplete="name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan password"
+                        autocomplete="current-password" required>
+                </div>
+
+                <button type="submit" id="login-button" disabled>
+                    Masuk ke Toko
+                </button>
+
+                <p class="note">
+                    Ini merupakan simulasi login frontend.
+                    Tidak ada akun yang diverifikasi.
+                </p>
+            </form>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
