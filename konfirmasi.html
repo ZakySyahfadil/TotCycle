@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pesanan - TotCycle</title>
+    <link rel="stylesheet" href="konfirmasi.css">
+    <script src="konfirmasi.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <h1>🛍️ TotCycle</h1>
+        <p>Konfirmasi Pesanan</p>
+    </header>
+
+    <main class="container">
+
+        <section class="payment-info">
+            <div>
+                <h2>Informasi Pembayaran</h2>
+                <p>
+                    Pembayaran dilunasi ketika barang telah tiba,
+                    tetapi konsumen harus membayar uang muka sebesar
+                    50% sebagai tanda bukti pemesanan.
+                </p>
+            </div>
+        </section>
+
+        <section class="order-card">
+            <h2>Ringkasan Pesanan</h2>
+
+            <div class="summary-row">
+                <span>Jumlah produk</span>
+                <strong id="item-count">0 produk</strong>
+            </div>
+
+            <div class="summary-row total-row">
+                <span>Total Harga Pesanan</span>
+                <strong id="total-price">Rp0</strong>
+            </div>
+        </section>
+
+        <section class="order-card">
+            <h2>Produk yang Dipesan</h2>
+
+            <div id="product-list"></div>
+        </section>
+
+        <section class="payment-card">
+            <h2>Rincian Pembayaran</h2>
+
+            <div class="summary-row">
+                <span>Uang muka (50%)</span>
+                <strong id="dp-total">Rp0</strong>
+            </div>
+
+            <p class="payment-note">
+                Uang muka sebesar 50% menjadi pembayaran awal
+                atas pesanan. Pembayaran dilunasi ketika
+                barang telah tiba.
+            </p>
+
+            <button id="agree-button">
+                Setuju &amp; Konfirmasi Pesanan
+            </button>
+
+            <p id="confirmation-message" role="status"></p>
+
+            <a href="toko.html" class="back-link">
+                ← Kembali ke toko
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TotCycle. Semua hak dilindungi.</p>
+    </footer>
+
+</body>
+
+</html>

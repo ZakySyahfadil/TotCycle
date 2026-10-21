@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran - TotCycle</title>
+    <link rel="stylesheet" href="pembayaran.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <h1>TotCycle</h1>
+        <p>Pembayaran Pesanan</p>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Selesaikan Pembayaran</h2>
+            <p>
+                Silakan lakukan pembayaran uang muka sebesar 50%
+                melalui QRIS berikut.
+            </p>
+        </section>
+
+        <section class="payment-card">
+            <h3>Pembayaran QRIS</h3>
+
+            <p class="payment-description">
+                Pindai kode QR di bawah ini menggunakan aplikasi
+                pembayaran yang mendukung QRIS.
+            </p>
+
+            <div class="qris-container">
+                <img src="bayar.jpeg" alt="Kode QRIS pembayaran TotCycle" class="qris-image">
+            </div>
+
+            <div class="payment-summary">
+                <span>Total uang muka (50%)</span>
+                <strong id="dp-total">Rp0</strong>
+            </div>
+
+            <button id="confirm-payment" type="button">
+                Konfirmasi Pembayaran
+            </button>
+
+            <p id="payment-message" aria-live="polite"></p>
+        </section>
+
+        <div class="back-container">
+            <a href="konfirmasi.html" class="back-link">
+                Kembali ke Konfirmasi Pesanan
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TotCycle. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="pembayaran.js"></script>
+</body>
+
+</html>

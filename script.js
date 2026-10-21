@@ -49,12 +49,28 @@ checkboxes.forEach(box => {
     box.addEventListener("change", updateCart);
 });
 
+
 buyButton.addEventListener("click", () => {
     const selected = [...checkboxes].filter(box => box.checked);
-    const names = selected.map(box => box.dataset.name).join(", ");
 
-    message.textContent =
-        `Kamu memilih ${names}. Total pembayaran: ${totalPrice.textContent}.`;
+    if (selected.length === 0) {
+        return;
+    }
+
+    const orders = selected.map(box => {
+        const product = box.closest(".product");
+
+        return {
+            name: box.dataset.name,
+            price: Number(box.value),
+            image: product.querySelector("img")?.getAttribute("src") || ""
+        };
+    });
+
+    sessionStorage.setItem("totcycleOrders", JSON.stringify(orders));
+
+    window.location.href = "konfirmasi.html";
 });
+
 
 updateCart();
